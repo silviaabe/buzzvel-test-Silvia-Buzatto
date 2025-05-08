@@ -8,7 +8,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="w-full px-4 sm:px-6 md:px-10 lg:px-20 py-6 bg-white text-blue-gray-900">
+    <header className="w-full p-4 sm:px-6 sm:py-6 md:px-10 lg:px-20 bg-white text-blue-gray-900">
       <div className="flex justify-between">
         <div className='flex items-center'>
           {/* Logo */}
