@@ -28,7 +28,7 @@ export default function Hero() {
               Sign Up Now
             </button>
             <button className="text-blue-600 flex items-center gap-3 font-medium hover:underline whitespace-nowrap text-[clamp(0.875rem,2.5vw,1.125rem)]">
-              <Image src="/images/Vector.png" alt="Play Icon" width={20} height={20} />
+              <Image src="/images/Play.png" alt="Play Icon" width={20} height={20} />
               View Demo
             </button>
           </div>
