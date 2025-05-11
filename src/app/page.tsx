@@ -1,24 +1,31 @@
 'use client';
 
-import Hero2 from '@/components/FeaturesSection';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import Testimonials from '@/components/Testimonials';
-import Section from '@/components/Section';
 import FeaturesSection from '@/components/FeaturesSection';
-//               </summary>
-// import Footer from '@/components/Footer';
+import FormerProfessionals from '@/components/FormerProfessionals';
+import MeetStudentsTeachers from '@/components/MeetStudentsTeachers';
+import InfoSection from '@/components/InfoSection';
+import TestimonialCarousel from '@/components/TestimonialCarousel';
+import FeatureHighlight from '@/components/FeatureHighlight';
+import CallToAction from '@/components/CallToAction';
+import RequestForm from '@/components/RequestForm';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
     <>
       <Header />
       <Hero />
-      <Hero2 />
-      <Testimonials />
-      <Section />
       <FeaturesSection />
-      {/* <Footer /> */}
+      <FormerProfessionals />
+      <MeetStudentsTeachers />
+      <InfoSection />
+      <TestimonialCarousel />
+      <FeatureHighlight />
+      <CallToAction />
+      <RequestForm />
+      <Footer />
     </>
   );
 }
