@@ -26,7 +26,7 @@ export default function FeatureHighlight() {
             >
               View all the features
             </a>
-            <Image src="/images/Vector3.png" alt="Arrow Icon" width={14} height={13} className="inline-block ml-4" />
+            <Image src="/images/Arrow Blue.png" alt="Arrow Icon" width={14} height={13} className="inline-block ml-4" />
           </div>
         </div>
 
