@@ -63,11 +63,11 @@ export default function TestimonialCarousel() {
   };
 
   return (
-    <section className="max-w-7xl px-4 md:px-20 py-12">
-      <div className='flex items-center justify-between mb-20'>
-        <h2 className="font-extrabold text-[56px] text-gray-900">What everyone says</h2>
+    <section className="max-w-7xl px-4 md:px-20 py-12 md:py-20" >
+      <div className='flex items-center justify-between mb-8 md:mb-20'>
+        <h2 className="font-extrabold text-[24px] md:text-[56px] text-gray-900">What everyone says</h2>
         {/* Navigation Arrows */}
-        <div className="flex gap-3">
+        <div className="hidden md:flex gap-6">
           <button
             onClick={handlePrev}
             className="p-2 rounded-full bg-white border border-orange-600 hover:bg-orange-100 cursor-pointer"
@@ -85,7 +85,7 @@ export default function TestimonialCarousel() {
         </div>
       </div>
 
-      <div className="relative">
+      <div className="relative hidden md:block">
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={index}
@@ -117,8 +117,32 @@ export default function TestimonialCarousel() {
             ))}
           </motion.div>
         </AnimatePresence>
-
-        
+      </div>
+      <div className="relative md:hidden overflow-x-auto no-scrollbar px-0">
+        <div className="flex gap-4 w-max pr-12 mb-2">
+          {testimonials.map((item, idx) => (
+            <motion.div
+              key={idx}
+              whileHover={{ scale: 1.03 }}
+              className="w-[70vw] flex-shrink-0 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <p className="text-black font-normal text-[16px]">{item.text}</p>
+              <div className="flex items-center gap-3 mt-6">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  width={48}
+                  height={48}
+                  className="rounded-full"
+                />
+                <div className='ml-2'>
+                  <p className="font-normal text-[16px] text-black">{item.name}</p>
+                  <p className="font-normal text-[14px] text-gray-600">{item.title}</p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

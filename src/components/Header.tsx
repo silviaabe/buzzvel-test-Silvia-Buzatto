@@ -23,7 +23,6 @@ export default function Header() {
             />
           </div>
 
-          {/* Desktop Nav */}
           <nav className="hidden md:flex gap-6 lg:gap-10 xl:gap-12 text-base font-medium leading-6">
             <a href="#" className="hover:font-extrabold">Products</a>
             <a href="#" className="hover:font-extrabold">Solutions</a>
@@ -38,7 +37,6 @@ export default function Header() {
         </div>
 
         <div>
-          {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <button className="text-base font-medium leading-6 hover:font-extrabold cursor-pointer">Log In</button>
             <button className="h-10 lg:h-12 px-4 lg:px-6 rounded-lg border-2 border-blue-gray-900 text-base font-medium leading-6 hover:bg-gray-100 flex items-center justify-center cursor-pointer">
@@ -46,7 +44,6 @@ export default function Header() {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-gray-700"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -60,7 +57,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden px-6 pb-4">
           <nav className="flex flex-col mt-4 space-y-2 text-sm font-medium text-gray-900">

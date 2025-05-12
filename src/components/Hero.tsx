@@ -4,37 +4,33 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="w-full px-4 sm:px-8 md:px-20 py-12 md:py-20 bg-white overflow-hidden">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 sm:gap-y-16 md:gap-y-20 gap-x-0 md:gap-x-20 items-center">
-        {/* Left Side */}
-        <div className="flex flex-col justify-center">
-          {/* Headline */}
-          <h1 className="font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-blue-gray-900 leading-tight">
+    <section className="w-full h-[847px] px-4 md:px-20 py-12 md:py-20 bg-white overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-20 gap-x-0 md:gap-x-20 items-center">
+
+        <div className="flex flex-col justify-center w-full">
+          <h1 className="font-extrabold text-[40px] md:text-[72px] text-gray-900 leading-tight">
             <span className="relative inline-block">
-              <Image src="/images/Line.png" alt="Line Icon" width={190} height={12} className="absolute top-10 sm:top-15 left-2" />
+              <Image src="/images/Line.png" alt="Line Icon" width={190} height={12} className="absolute top-9 md:top-16 left-1" />
               <span className="relative z-10">Teach</span>
             </span>{" "}
             students worldwide
           </h1>
 
-          {/* Description */}
-          <p className="mt-6 mb-8 sm:mt-6 sm:mb-8 mobile:mt-[24px] mobile:mb-[24px] font-normal text-lg sm:text-xl md:text-2xl text-blue-gray-900">
+          <p className="mt-6 mb-6 md:mt-8 md:mb-8 font-normal text-[16px] md:text-[24px] text-gray-900">
             Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.
           </p>
 
-          {/* Buttons */}
-          <div className="flex flex-nowrap items-center gap-6 min-w-0">
-            <button className="px-6 py-4 bg-orange-600 text-white font-bold rounded-lg border-2 hover:bg-orange-500 transition whitespace-nowrap text-[clamp(0.875rem,2.5vw,1.125rem)]">
+          <div className="flex flex-nowrap items-center gap-6 md:gap-8 min-w-0">
+            <button className="px-7 py-3 md:px-12 md:py-5 bg-orange-600 text-white font-bold rounded-lg border-2 hover:bg-orange-500 transition whitespace-nowrap text-[clamp(0.875rem,2.5vw,1.125rem)]">
               Sign Up Now
             </button>
-            <button className="text-blue-600 flex items-center gap-3 font-medium hover:underline whitespace-nowrap text-[clamp(0.875rem,2.5vw,1.125rem)]">
+            <button className="text-blue-600 flex items-center gap-4 font-medium hover:underline whitespace-nowrap text-[clamp(0.875rem,2.5vw,1.125rem)]">
               <Image src="/images/Play.png" alt="Play Icon" width={20} height={20} />
               View Demo
             </button>
           </div>
 
-          {/* Trusted Logos */}
-          <div className="mt-12 sm:mt-16 mobile:mt-[32px] text-gray-600 text-sm sm:text-base flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 md:gap-12">
+          <div className="mt-8 md:mt-20 text-gray-600 text-sm flex flex-col md:flex-row items-start gap-6 md:gap-12">
             <p className="min-w-[120px]">Trusted by <br /> leading companies</p>
             <div className="flex flex-wrap items-center gap-4 sm:gap-6 md:gap-8">
               <Image src="/images/Company1.png" alt="Company 1" width={32} height={32} />
@@ -46,52 +42,49 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Side */}
-        <div className="relative w-full h-[329px] sm:h-[400px] md:h-[500px]">
-          {/* Left Image */}
-          <div className="absolute bottom-0 left-0 z-10 w-[150px] sm:w-[200px] md:w-[250px]">
+        <div className="relative w-full min-h-[329px] md:min-h-[625px] flex flex-col justify-center">
+          <div className="w-[50vw] md:w-[25vw] absolute bottom-0 left-0 z-10">
             <Image
               src="/images/Teacher.png"
               alt="Teacher Icon"
               layout="responsive"
               width={270}
               height={345}
+              className="max-w-full h-auto"
             />
           </div>
 
-          {/* Speech Bubbles */}
-          <div className="absolute top-6 left-[10%] sm:left-[25%] z-20 flex flex-col gap-2 sm:gap-4 max-w-[70%] sm:max-w-[60%]">
-            <div className="self-end bg-white text-blue-gray-900 px-4 py-2 rounded-tl-[15px] rounded-tr-[15px] rounded-br-[3px] rounded-bl-[15px] shadow-md text-xs sm:text-sm">
+          <div className="flex flex-col gap-2 md:gap-4 h-[30%] md:max-w-[235px] z-20 absolute top-[0%] md:left-[15%]">
+            <div className="self-end bg-white text-gray-900 px-4 py-2 rounded-tl-[15px] rounded-tr-[15px] rounded-br-[3px] rounded-bl-[15px] shadow-md text-[12px] md:text-[16px]">
               Nunc, at libero neque
             </div>
-            <div className="self-end bg-white text-blue-gray-900 px-4 py-2 rounded-tl-[15px] rounded-tr-[15px] rounded-br-[3px] rounded-bl-[15px] shadow-md text-xs sm:text-sm">
+            <div className="self-end bg-white text-gray-900 px-4 py-2 rounded-tl-[15px] rounded-tr-[15px] rounded-br-[3px] rounded-bl-[15px] shadow-md text-[12px] md:text-[16px]">
               Viverra sed
             </div>
-            <div className="bg-gray-700 text-white px-4 py-2 rounded-tl-[15px] rounded-tr-[15px] rounded-br-[15px] rounded-bl-[3px] text-xs sm:text-sm">
+            <div className="bg-gray-700 text-white px-4 py-2 rounded-tl-[15px] rounded-tr-[15px] rounded-br-[15px] rounded-bl-[3px] text-[12px] md:text-[16px]">
               Turpis platea nunc mattis
             </div>
-            <div className="self-start bg-gray-700 text-white px-4 py-2 rounded-tl-[15px] rounded-tr-[15px] rounded-br-[15px] rounded-bl-[3px] text-xs sm:text-sm">
+            <div className="self-start bg-gray-700 text-white px-4 py-2 rounded-tl-[15px] rounded-tr-[15px] rounded-br-[15px] rounded-bl-[3px] text-[12px] md:text-[16px]">
               Vitae viverra ut non
-            </div>            
+            </div>
           </div>
 
-          {/* Right Image */}
-          <div className="absolute top-6 right-0 z-10 w-[140px] sm:w-[180px] md:w-[220px]">
+          <div className="absolute top-0 right-0 z-10 w-[45vw] md:w-[20vw]">
             <Image
               src="/images/Student.png"
               alt="Student Icon"
               layout="responsive"
               width={250}
               height={348}
+              className="max-w-full h-auto"
             />
           </div>
-
-          {/* Logos Image */}
-          <div className="absolute bottom-[1%] right-[10%] z-10 w-[100px] sm:w-[140px] md:w-[159px]">
+          
+          <div className="absolute bottom-[1%] right-[0%] z-10 w-[35vw] sm:w-[12vw] md:w-[10vw] max-w-[159px]">
             <Image
               src="/images/Icons.png"
               alt="Icons"
-              layout="responsive"
+              layout="intrinsic"
               width={159}
               height={128}
             />
@@ -99,5 +92,6 @@ export default function Hero() {
         </div>
       </div>
     </section>
+
   );
 }

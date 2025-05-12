@@ -44,13 +44,13 @@ export default function CallToAction() {
       ))}
 
       {/* Conteúdo principal */}
-      <div className="relative z-10 px-20">
-        <h2 className="font-extrabold text-[56px] leading-tight text-gray-900">Join a world of learning</h2>
-        <p className="mt-8 mb-8 space-y-2 text-blue-gray-900 font-normal leading-loose text-[20px]">
+      <div className="relative z-10 px-4 md:px-20">
+        <h2 className="font-extrabold text-[24px] md:text-[56px] leading-tight text-gray-900">Join a world of learning</h2>
+        <p className="mt-6 md:mt-8 mb-6 md:mb-8 space-y-2 text-blue-gray-900 font-normal leading-loose text-[16px] md:text-[20px]">
           Malesuada ut aliquam at ac est nisi, interdum etiam dignissim. <br />
           Risus elit et fringilla habitant ut facilisi.
         </p>
-        <button className="bg-orange-600 hover:bg-orange-700 text-white text-[24px] font-bold py-5 px-12 rounded-lg transition">
+        <button className="bg-orange-600 hover:bg-orange-700 text-white text-[20px] md:text-[24px] font-bold py-4 md:py-5 px-8 md:px-12 rounded-lg transition cursor-pointer">
           Sign Up Now
         </button>
       </div>

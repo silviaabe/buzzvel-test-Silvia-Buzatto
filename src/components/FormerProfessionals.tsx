@@ -33,13 +33,13 @@ export default function FormerProfessionals() {
   const { text, name, company, image } = comments[index];
 
   return (
-    <div className="bg-[#FFD400] h-[575px] flex flex-col md:flex-row justify-between items-center p-20 relative">
+    <div className="bg-yellow-400 min-h-[684px] md:min-h-[575px] flex flex-col md:flex-row justify-between items-center py-12 px-4 md:p-20 relative">
 
-      <Image src="/images/Icons3.png" alt="Star Icon" width={155} height={155} className="absolute bottom-12 right-125 z-50" />
-      <Image src="/images/chat-quote.png" alt="Star Icon" width={48} height={48} className="absolute top-4 right-50" />
+      <Image src="/images/Icons3.png" alt="Squares Icon" width={155} height={155} className="absolute -bottom-12 md:bottom-12 left-10 md:left-auto md:right-112 z-50" />
+      <Image src="/images/chat-quote.png" alt="Star Icon" width={48} height={48} className="absolute top-70 md:top-4 right-15 md:right-50" />
 
-      <div className="relative max-w-auto text-black space-y-4 px-[72px]">
-        <div className="absolute left-0 top-1/2 -translate-y-1/2">
+      <div className="relative md:max-w-auto text-black space-y-4 px-0 md:px-[72px]">
+        <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2">
           <Image onClick={handlePrev} src="/images/Vector white.png" alt="Ícone esquerdo" width={18} height={31} />
         </div>
         
@@ -50,16 +50,17 @@ export default function FormerProfessionals() {
             alt="Decorativo"
             width={650}
             height={573}
-            className="absolute -top-30 -right-15 z-0"
+            className="w-full max-w-[650px] md:max-w-[650px] h-auto absolute -bottom-10 md:-top-30 md:-right-15 z-0"
           />
 
           {/* Conteúdo sobreposto */}
-          <div className="relative z-10 w-auto h-auto flex flex-col md:flex-row items-center gap-20">
-            <div className="w-auto h-auto flex flex-col items-start">
-              <p className="text-[24px] mb-4">{text}</p>
-              <p className="text-[24px] font-normal">{name},</p>
-              <p className="text-[24px] font-bold italic">{company}</p>
-              <div className="flex gap-2 mt-4">
+          <div className="relative z-10 w-full h-auto flex flex-col md:flex-row items-center gap-10 md:gap-20">
+            {/* Texto */}
+            <div className="w-full md:w-1/2 flex flex-col items-start px-4">
+              <p className="text-[18px] md:text-[24px] mb-4">{text}</p>
+              <p className="text-[18px] md:text-[24px] font-normal">{name},</p>
+              <p className="text-[18px] md:text-[24px] font-bold italic">{company}</p>
+              <div className="flex gap-2 mt-12 md:mt-4">
                 {comments.map((_, i) => (
                   <div
                     key={i}
@@ -70,12 +71,22 @@ export default function FormerProfessionals() {
                 ))}
               </div>
             </div>
-            <Image src={image} alt={name} width={528} height={415} />
+
+            {/* Imagem */}
+            <div className="w-full md:w-1/2 flex justify-center">
+              <Image
+                src={image}
+                alt={name}
+                width={528}
+                height={415}
+                className="w-full h-auto max-w-[400px] md:max-w-full"
+              />
+            </div>
           </div>
         </div>
         
 
-        <div className="absolute right-0 top-1/2 -translate-y-1/2">
+        <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2">
           <Image onClick={handleNext} src="/images/Vector dark.png" alt="Ícone direito" width={18} height={31} />
         </div>
       </div>
