@@ -22,7 +22,7 @@ export default function FeatureHighlight() {
           <div className="w-69 hover:underline cursor-pointer">
             <a
               href="#"
-              className="inline-flex text-blue-600 font-medium text-[16px] md:text-[20px] pt-3 md:pt-4 pr-10 md:pr-4 pb-3 md:pb-4 pl-0"
+              className="inline-flex text-blue-600 font-medium text-[16px] md:text-[20px] md:pt-4 md:pr-2 md:pb-4 pl-0"
             >
               View all the features
             </a>
@@ -58,13 +58,13 @@ export default function FeatureHighlight() {
               <span className="px-2 py-1 font-normal text-[14px] rounded bg-blue-100 text-blue-800 inline-block">
                 Popular
               </span>
-              <h3 className="font-medium text-[20px] text-blue-gray-900 mt-2 mb-2 leading-tight">
+              <h3 className="font-medium text-[20px] text-gray-900 mt-2 mb-2 leading-tight">
                 Design for how people think
               </h3>
-              <p className="font-normal text-[14px] text-blue-gray-600 mb-4">
+              <p className="font-normal text-[14px] text-gray-600 mb-4">
                 Aliquam et ultrices elementum ultrices.
               </p>
-              <button className="w-42 border-2 rounded-lg px-3 py-2 border-blue-600 bg-white text-blue-600 text-[14px] font-medium hover:bg-blue-gray-200 cursor-pointer">
+              <button className="w-42 border-2 rounded-lg px-3 py-2 border-blue-600 bg-white text-blue-600 text-[14px] font-medium hover:bg-gray-200 cursor-pointer">
                 Take Lesson
               </button>
             </div>

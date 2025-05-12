@@ -21,10 +21,10 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-nowrap items-center gap-6 md:gap-8 min-w-0">
-            <button className="px-7 py-3 md:px-12 md:py-5 bg-orange-600 text-white font-bold rounded-lg border-2 hover:bg-orange-500 transition whitespace-nowrap text-[clamp(0.875rem,2.5vw,1.125rem)]">
+            <button className="px-7 py-3 md:px-12 md:py-5 bg-orange-600 text-white font-bold rounded-lg border-2 hover:bg-orange-500 transition whitespace-nowrap text-[clamp(0.875rem,2.5vw,1.125rem)] cursor-pointer">
               Sign Up Now
             </button>
-            <button className="text-blue-600 flex items-center gap-4 font-medium hover:underline whitespace-nowrap text-[clamp(0.875rem,2.5vw,1.125rem)]">
+            <button className="text-blue-600 flex items-center gap-4 font-medium hover:underline whitespace-nowrap text-[clamp(0.875rem,2.5vw,1.125rem)] cursor-pointer">
               <Image src="/images/Play.png" alt="Play Icon" width={20} height={20} />
               View Demo
             </button>

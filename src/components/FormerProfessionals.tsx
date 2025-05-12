@@ -39,7 +39,7 @@ export default function FormerProfessionals() {
       <Image src="/images/chat-quote.png" alt="Star Icon" width={48} height={48} className="absolute top-70 md:top-4 right-15 md:right-50" />
 
       <div className="relative md:max-w-auto text-black space-y-4 px-0 md:px-[72px]">
-        <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2">
+        <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 cursor-pointer">
           <Image onClick={handlePrev} src="/images/Vector white.png" alt="Ícone esquerdo" width={18} height={31} />
         </div>
         
@@ -86,7 +86,7 @@ export default function FormerProfessionals() {
         </div>
         
 
-        <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2">
+        <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer">
           <Image onClick={handleNext} src="/images/Vector dark.png" alt="Ícone direito" width={18} height={31} />
         </div>
       </div>

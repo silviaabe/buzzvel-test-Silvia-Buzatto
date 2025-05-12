@@ -36,7 +36,7 @@ export default function FeaturesSection() {
           <div className='w-69 hover:underline cursor-pointer'>
             <a
               href="#"
-              className="inline-flex text-blue-600 font-medium text-[16px] md:text-[20px] pt: md:pt-4 md:pr-2 md:pb-4 pl-0"
+              className="inline-flex text-blue-600 font-medium text-[16px] md:text-[20px] md:pt-4 md:pr-2 md:pb-4 pl-0"
             >
               Find more about the app
             </a>
@@ -63,10 +63,10 @@ export default function FeaturesSection() {
               <h3 className="font-medium text-[20px] text-gray-900 mt-2 mb-2 leading-tight">
                 The map of mathematics
               </h3>
-              <p className="font-normal text-[14px] text-blue-gray-600 mb-4">
+              <p className="font-normal text-[14px] text-gray-600 mb-4">
                 Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.
               </p>
-              <button className="w-42 border-2 rounded-lg px-3 py-2 border-blue-600 bg-white text-blue-600 text-[14px] font-medium hover:bg-blue-gray-200 cursor-pointer">
+              <button className="w-42 border-2 rounded-lg px-3 py-2 border-blue-600 bg-white text-blue-600 text-[14px] font-medium hover:bg-gray-200 cursor-pointer">
                 Take Lesson
               </button>
             </div>
@@ -74,13 +74,13 @@ export default function FeaturesSection() {
               <span className="px-2 py-1 font-normal text-[14px] rounded bg-blue-100 text-blue-800 inline-block">
                 Popular
               </span>
-              <h3 className="font-medium text-[20px] text-blue-gray-900 mt-2 mb-2 leading-tight">
+              <h3 className="font-medium text-[20px] text-gray-900 mt-2 mb-2 leading-tight">
                 Design for how people think
               </h3>
-              <p className="font-normal text-[14px] text-blue-gray-600 mb-4">
+              <p className="font-normal text-[14px] text-gray-600 mb-4">
                 Aliquam ut euismod condimentum elementum ultricies volutpat sit non. 
               </p>
-              <button className="w-42 border-2 rounded-lg px-3 py-2 border-blue-600 bg-white text-blue-600 text-[14px] font-medium hover:bg-blue-gray-200 cursor-pointer">
+              <button className="w-42 border-2 rounded-lg px-3 py-2 border-blue-600 bg-white text-blue-600 text-[14px] font-medium hover:bg-gray-200 cursor-pointer">
                 Take Lesson
               </button>
             </div>
@@ -88,13 +88,13 @@ export default function FeaturesSection() {
               <span className="px-2 py-1 font-normal text-[14px] rounded bg-green-100 text-green-800 inline-block">
                 New
               </span>
-              <h3 className="font-medium text-[20px] text-blue-gray-900 mt-2 mb-2 leading-tight">
+              <h3 className="font-medium text-[20px] text-gray-900 mt-2 mb-2 leading-tight">
                 International & commercial law
               </h3>
-              <p className="font-normal text-[14px] text-blue-gray-600 mb-4">
+              <p className="font-normal text-[14px] text-gray-600 mb-4">
                 Molestie integer eu arcu, mauris bibendum rhoncus imperdiet dui. 
               </p>
-              <button className="w-42 border-2 rounded-lg px-3 py-2 border-blue-600 bg-white text-blue-600 text-[14px] font-medium hover:bg-blue-gray-200 cursor-pointer">
+              <button className="w-42 border-2 rounded-lg px-3 py-2 border-blue-600 bg-white text-blue-600 text-[14px] font-medium hover:bg-gray-200 cursor-pointer">
                 Take Lesson
               </button>
             </div>

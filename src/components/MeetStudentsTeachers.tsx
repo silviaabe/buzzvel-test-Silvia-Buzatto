@@ -39,10 +39,10 @@ export default function MeetStudentsTeachers() {
           <p className="text-gray-600 mt-6 md:mt-8 mb-6 md:mb-8 text-[16px] md:text-[20px] leading-relaxed">
             Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, faucibus aenean lorem faucibus integer.
           </p>
-          <a href="#" className="inline-flex items-center text-[16px] md:text-[24px] gap-2 text-blue-600 font-semibold hover:underline">
+          <a href="#" className="inline-flex items-center text-[16px] md:text-[20px] text-blue-600 font-medium hover:underline cursor-pointer md:pt-4 md:pr-2 md:pb-4 pl-0">
             Explore teachers and students 
-            <Image src="/images/Arrow Blue.png" alt="Arrow Blue" width={14} height={13} />
           </a>
+          <Image src="/images/Arrow Blue.png" alt="Arrow Blue" width={14} height={13} className="inline-block ml-4"/>
         </div>
       </div>
     </section>
