@@ -1,6 +1,6 @@
 # 🚀 Buzzvel FE - Test 2025
 
-This project was developed as part of a technical assessment for Buzzvel.  
+This project was developed as part of a technical assessment for [Buzzvel](https://buzzvel.com/).  
 I truly enjoyed working on it! As a front-end developer with experience in **React**, **Next.js**, **JavaScript**, **HTML**, and **CSS**, I felt very comfortable bringing the interface to life.
 
 To style the project, I chose to use **Tailwind CSS** because I find it modern and practical. However, I also have experience with **Styled-Components**.
